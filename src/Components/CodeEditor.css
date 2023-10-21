@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* CSS Acording To BEM */
+
+/* Main container */
+
+.main__container {
+  background-color: #F5F8FF;
+  color: #000;
+  width: 100%;
+  height: 110vh;
+
+}
+
+/* css for heading */
+.heading__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  padding: 20px;
+  background: linear-gradient(to right, #FFFFFF, #FBC40B);
+  color: #fff;
+}
+.heading__text {
+  font-size: 30px;
+}
+
+/* css for heading End */
+
+/* Dropdown menue */
+.dropdown__container {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+
+  
+
+}
+
+/* Dropdown menue end */
+
+/* Editor  css*/
+
+.Editor__container {
+  margin: 20px;
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+
+
+}
+
+.Editor__textarea {
+  /* color: #000000; */
+  padding-top: 10px;
+  box-shadow: #000 1px 1px 2px 2px ;
+ 
+}
+
+.Editor__output {
+  width: 40%;
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #000;
+
+}
+.Editor__outputhead {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  color: #FFFF;
+}
+.Editor__outputcoderenderer {
+  width: 100%;
+  background-color: #E0E1FF;
+  height: 68vh;
+  color: #ffffff;
+}
+
+/* Editor css End*/
+
+/* functional button css  */
+.function__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px;
+}
+.function__runbtn,
+.function__Copybtn,
+.function__Savebtn,
+.function__LockUnlockbtn {
+  padding: 10px;
+  margin: 5px;
+  width: 80px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(72, 75, 75);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.function__LockUnlockbtn:hover {
+  background-color: rgb(148, 205, 255);
+  transform: scale(1.1);
+}
+.function__Savebtn:hover {
+  background-color: rgb(148, 205, 255);
+  transform: scale(1.1);
+}
+.function__Copybtn:hover {
+  transform: scale(1.1);
+  background-color: rgb(148, 205, 255);
+}
+.function__runbtn:hover {
+  background-color: rgb(148, 205, 255);
+  transform: scale(1.1);
+}
+/* functional button css End */
+
+
+
+/************* CSS End  **************/

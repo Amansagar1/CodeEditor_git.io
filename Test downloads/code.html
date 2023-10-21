@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Button</title>
+  <style>
+    
+    .toggle-button {
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      background-color: #ccc;
+      border-radius: 15px;
+      position: relative;
+      cursor: pointer;
+    }
+
+
+    .indicator {
+      width: 28px;
+      height: 28px;
+      background-color: #2196F3;
+      border-radius: 50%;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      transition: transform 0.3s ease;
+    }
+
+
+    .on {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-button" id="toggle">
+    <div class="indicator" id="indicator"></div>
+  </div>
+
+  <script>
+   
+    const toggleButton = document.getElementById('toggle');
+    const indicator = document.getElementById('indicator');
+
+
+    let isOn = false;
+
+
+    function toggle() {
+      isOn = !isOn;
+      if (isOn) {
+        toggleButton.classList.add('on');
+        indicator.style.transform = 'translateX(30px)';
+      } else {
+        toggleButton.classList.remove('on');
+        indicator.style.transform = 'translateX(0)';
+      }
+    }
+
+  
+    toggleButton.addEventListener('click', toggle);
+  </script>
+</body>
+</html>
